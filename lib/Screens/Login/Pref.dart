@@ -63,18 +63,6 @@ class _PrefScreenState extends State<PrefScreen> {
         body: SafeArea(
           child: Stack(
             children: [
-              Positioned(
-                left: MediaQuery.of(context).size.width / 1.85,
-                child: SizedBox(
-                  width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.width,
-                  child: const Image(
-                    image: AssetImage(
-                      'assets/icon-white-trans.png',
-                    ),
-                  ),
-                ),
-              ),
               const GradientContainer(
                 child: null,
                 opacity: true,

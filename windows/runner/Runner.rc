@@ -52,7 +52,13 @@ END
 
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
-IDI_APP_ICON            ICON                    "resources\\app_icon.ico"
+// IDI_APP_ICON            ICON                    "resources\\app_icon_16x16.ico"
+// IDI_APP_ICON            ICON                    "resources\\app_icon_32x32.ico"
+// IDI_APP_ICON            ICON                    "resources\\app_icon_48x48.ico"
+IDI_APP_ICON            ICON                    "resources\\app_icon_64x64.ico"
+// IDI_APP_ICON            ICON                    "resources\\app_icon_96x96.ico"
+// IDI_APP_ICON            ICON                    "resources\\app_icon_128x128.ico"
+// IDI_APP_ICON            ICON                    "resources\\app_icon_256x256.ico"
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -63,13 +69,13 @@ IDI_APP_ICON            ICON                    "resources\\app_icon.ico"
 #ifdef FLUTTER_BUILD_NUMBER
 #define VERSION_AS_NUMBER FLUTTER_BUILD_NUMBER
 #else
-#define VERSION_AS_NUMBER 1,0,0
+#define VERSION_AS_NUMBER 1,13,1
 #endif
 
 #ifdef FLUTTER_BUILD_NAME
 #define VERSION_AS_STRING #FLUTTER_BUILD_NAME
 #else
-#define VERSION_AS_STRING "1.0.0"
+#define VERSION_AS_STRING "1.13.1"
 #endif
 
 VS_VERSION_INFO VERSIONINFO
@@ -89,13 +95,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "bluemoon" "\0"
+            VALUE "CompanyName", "BlackHole" "\0"
+            VALUE "FileDescription", "BlackHole" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "bluemoon" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2022 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "bluemoon.exe" "\0"
-            VALUE "ProductName", "bluemoon" "\0"
+            VALUE "InternalName", "BlackHole" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2021 Ankit Sangwan. All rights reserved." "\0"
+            VALUE "OriginalFilename", "blackhole.exe" "\0"
+            VALUE "ProductName", "BlackHole" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

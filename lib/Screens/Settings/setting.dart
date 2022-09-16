@@ -3622,7 +3622,7 @@ class _SettingPageState extends State<SettingPage> {
                             Share.share(
                               '${AppLocalizations.of(
                                 context,
-                              )!.shareAppText}: https://github.com/Sangwan5688/bluemoon',
+                              )!.shareAppText}: https://github.com/Subhradeep10/BlueMoon',
                             );
                           },
                           dense: true,
@@ -3644,7 +3644,7 @@ class _SettingPageState extends State<SettingPage> {
                           onTap: () {
                             launchUrl(
                               Uri.parse(
-                                'https://www.buymeacoffee.com/ankitsangwan',
+                                'https://www.buymeacoffee.com/subhradeep',
                               ),
                               mode: LaunchMode.externalApplication,
                             );
@@ -3665,18 +3665,10 @@ class _SettingPageState extends State<SettingPage> {
                           ),
                           dense: true,
                           isThreeLine: true,
-                          onTap: () {
-                            const String upiUrl =
-                                'upi://pay?pa=ankit.sangwan.5688@oksbi&pn=bluemoon';
-                            launchUrl(
-                              Uri.parse(upiUrl),
-                              mode: LaunchMode.externalApplication,
-                            );
-                          },
                           onLongPress: () {
                             copyToClipboard(
                               context: context,
-                              text: 'ankit.sangwan.5688@oksbi',
+                              text: 'subhradeepsamanta2002@oksbi',
                               displayText: AppLocalizations.of(
                                 context,
                               )!
@@ -3693,7 +3685,7 @@ class _SettingPageState extends State<SettingPage> {
                             onPressed: () {
                               copyToClipboard(
                                 context: context,
-                                text: 'ankit.sangwan.5688@oksbi',
+                                text: 'subhradeepsamanta2002@oksbi',
                                 displayText: AppLocalizations.of(
                                   context,
                                 )!
@@ -3783,7 +3775,7 @@ class _SettingPageState extends State<SettingPage> {
                                                 Navigator.pop(context);
                                                 launchUrl(
                                                   Uri.parse(
-                                                    'https://t.me/joinchat/fHDC1AWnOhw0ZmI9',
+                                                    'https://t.me/joinchat/8584021403',
                                                   ),
                                                   mode: LaunchMode
                                                       .externalApplication,
@@ -3814,7 +3806,7 @@ class _SettingPageState extends State<SettingPage> {
                                                 Navigator.pop(context);
                                                 launchUrl(
                                                   Uri.parse(
-                                                    'https://instagram.com/sangwan5688',
+                                                    'https://www.instagram.com/dexterous_v20/',
                                                   ),
                                                   mode: LaunchMode
                                                       .externalApplication,
@@ -3877,7 +3869,7 @@ class _SettingPageState extends State<SettingPage> {
                                                 Navigator.pop(context);
                                                 launchUrl(
                                                   Uri.parse(
-                                                    'https://t.me/joinchat/fHDC1AWnOhw0ZmI9',
+                                                    'https://t.me/joinchat/8584021403',
                                                   ),
                                                   mode: LaunchMode
                                                       .externalApplication,
@@ -3908,7 +3900,7 @@ class _SettingPageState extends State<SettingPage> {
                                                 Navigator.pop(context);
                                                 launchUrl(
                                                   Uri.parse(
-                                                    'https://t.me/bluemoon_official',
+                                                    'https://t.me/joinchat/8584021403',
                                                   ),
                                                   mode: LaunchMode
                                                       .externalApplication,

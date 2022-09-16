@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 3.14)
-project(bluemoon LANGUAGES CXX)
+cmake_minimum_required(VERSION 3.15)
+project(blackhole LANGUAGES CXX)
 
-set(BINARY_NAME "bluemoon")
+set(BINARY_NAME "blackhole")
 
 cmake_policy(SET CMP0063 NEW)
 

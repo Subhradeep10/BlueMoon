@@ -303,7 +303,7 @@ class _HomePageState extends State<HomePage> {
               physics: const BouncingScrollPhysics(),
               slivers: [
                 SliverAppBar(
-                  backgroundColor: Colors.transparent,
+                  backgroundColor: Colors.black,
                   automaticallyImplyLeading: false,
                   elevation: 0,
                   stretch: true,

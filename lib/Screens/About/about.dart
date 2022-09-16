@@ -51,8 +51,8 @@ class _AboutScreenState extends State<AboutScreen> {
       child: Stack(
         children: [
           Positioned(
-            left: MediaQuery.of(context).size.width / 2,
-            top: MediaQuery.of(context).size.width / 5,
+            left: MediaQuery.of(context).size.width / 5,
+            top: MediaQuery.of(context).size.width / 8,
             child: SizedBox(
               width: MediaQuery.of(context).size.width,
               child: const Image(
@@ -126,7 +126,7 @@ class _AboutScreenState extends State<AboutScreen> {
                         onPressed: () {
                           launchUrl(
                             Uri.parse(
-                              'https://github.com/Sangwan5688/BlackHole',
+                              'https://github.com/Subhradeep10/BlueMoon',
                             ),
                             mode: LaunchMode.externalApplication,
                           );
@@ -161,7 +161,7 @@ class _AboutScreenState extends State<AboutScreen> {
                       onPressed: () {
                         launchUrl(
                           Uri.parse(
-                            'https://www.buymeacoffee.com/ankitsangwan',
+                            'https://www.buymeacoffee.com/subhradeep',
                           ),
                           mode: LaunchMode.externalApplication,
                         );
@@ -195,7 +195,7 @@ class _AboutScreenState extends State<AboutScreen> {
                       onLongPress: () {
                         copyToClipboard(
                           context: context,
-                          text: 'ankit.sangwan.5688@oksbi',
+                          text: 'subhradeepsamanta2002@oksbi',
                           displayText: AppLocalizations.of(
                             context,
                           )!
