@@ -1,39 +1,39 @@
 /*
- *  This file is part of BlackHole (https://github.com/Sangwan5688/BlackHole).
+ *  This file is part of bluemoon (https://github.com/Sangwan5688/bluemoon).
  * 
- * BlackHole is free software: you can redistribute it and/or modify
+ * bluemoon is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * BlackHole is distributed in the hope that it will be useful,
+ * bluemoon is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU Lesser General Public License for more details.
  *
  * You should have received a copy of the GNU Lesser General Public License
- * along with BlackHole.  If not, see <http://www.gnu.org/licenses/>.
+ * along with bluemoon.  If not, see <http://www.gnu.org/licenses/>.
  * 
  * Copyright (c) 2021-2022, Ankit Sangwan
  */
 
 import 'dart:io';
 
-import 'package:blackhole/CustomWidgets/copy_clipboard.dart';
-import 'package:blackhole/CustomWidgets/gradient_containers.dart';
-import 'package:blackhole/CustomWidgets/popup.dart';
-import 'package:blackhole/CustomWidgets/snackbar.dart';
-import 'package:blackhole/CustomWidgets/textinput_dialog.dart';
-import 'package:blackhole/Helpers/backup_restore.dart';
-import 'package:blackhole/Helpers/config.dart';
-// import 'package:blackhole/Helpers/countrycodes.dart';
-import 'package:blackhole/Helpers/picker.dart';
-import 'package:blackhole/Helpers/supabase.dart';
-import 'package:blackhole/Screens/Home/saavn.dart' as home_screen;
-import 'package:blackhole/Screens/Settings/player_gradient.dart';
-// import 'package:blackhole/Screens/Top Charts/top.dart' as top_screen;
-import 'package:blackhole/Services/ext_storage_provider.dart';
-import 'package:blackhole/main.dart';
+import 'package:bluemoon/CustomWidgets/copy_clipboard.dart';
+import 'package:bluemoon/CustomWidgets/gradient_containers.dart';
+import 'package:bluemoon/CustomWidgets/popup.dart';
+import 'package:bluemoon/CustomWidgets/snackbar.dart';
+import 'package:bluemoon/CustomWidgets/textinput_dialog.dart';
+import 'package:bluemoon/Helpers/backup_restore.dart';
+import 'package:bluemoon/Helpers/config.dart';
+// import 'package:bluemoon/Helpers/countrycodes.dart';
+import 'package:bluemoon/Helpers/picker.dart';
+import 'package:bluemoon/Helpers/supabase.dart';
+import 'package:bluemoon/Screens/Home/saavn.dart' as home_screen;
+import 'package:bluemoon/Screens/Settings/player_gradient.dart';
+// import 'package:bluemoon/Screens/Top Charts/top.dart' as top_screen;
+import 'package:bluemoon/Services/ext_storage_provider.dart';
+import 'package:bluemoon/main.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -60,7 +60,7 @@ class _SettingPageState extends State<SettingPage> {
       .get('downloadPath', defaultValue: '/storage/emulated/0/Music') as String;
   String autoBackPath = Hive.box('settings').get(
     'autoBackPath',
-    defaultValue: '/storage/emulated/0/BlackHole/Backups',
+    defaultValue: '/storage/emulated/0/bluemoon/Backups',
   ) as String;
   final ValueNotifier<bool> includeOrExclude = ValueNotifier<bool>(
     Hive.box('settings').get('includeOrExclude', defaultValue: false) as bool,
@@ -3427,9 +3427,9 @@ class _SettingPageState extends State<SettingPage> {
                             onPressed: () async {
                               autoBackPath =
                                   await ExtStorageProvider.getExtStorage(
-                                        dirName: 'BlackHole/Backups',
+                                        dirName: 'bluemoon/Backups',
                                       ) ??
-                                      '/storage/emulated/0/BlackHole/Backups';
+                                      '/storage/emulated/0/bluemoon/Backups';
                               Hive.box('settings')
                                   .put('autoBackPath', autoBackPath);
                               setState(
@@ -3622,7 +3622,7 @@ class _SettingPageState extends State<SettingPage> {
                             Share.share(
                               '${AppLocalizations.of(
                                 context,
-                              )!.shareAppText}: https://github.com/Sangwan5688/BlackHole',
+                              )!.shareAppText}: https://github.com/Sangwan5688/bluemoon',
                             );
                           },
                           dense: true,
@@ -3667,7 +3667,7 @@ class _SettingPageState extends State<SettingPage> {
                           isThreeLine: true,
                           onTap: () {
                             const String upiUrl =
-                                'upi://pay?pa=ankit.sangwan.5688@oksbi&pn=BlackHole';
+                                'upi://pay?pa=ankit.sangwan.5688@oksbi&pn=bluemoon';
                             launchUrl(
                               Uri.parse(upiUrl),
                               mode: LaunchMode.externalApplication,
@@ -3752,7 +3752,7 @@ class _SettingPageState extends State<SettingPage> {
                                                 Navigator.pop(context);
                                                 launchUrl(
                                                   Uri.parse(
-                                                    'https://mail.google.com/mail/?extsrc=mailto&url=mailto%3A%3Fto%3Dblackholeyoucantescape%40gmail.com%26subject%3DRegarding%2520Mobile%2520App',
+                                                    'https://mail.google.com/mail/?extsrc=mailto&url=mailto%3A%3Fto%3Dbluemoonyoucantescape%40gmail.com%26subject%3DRegarding%2520Mobile%2520App',
                                                   ),
                                                   mode: LaunchMode
                                                       .externalApplication,
@@ -3908,7 +3908,7 @@ class _SettingPageState extends State<SettingPage> {
                                                 Navigator.pop(context);
                                                 launchUrl(
                                                   Uri.parse(
-                                                    'https://t.me/blackhole_official',
+                                                    'https://t.me/bluemoon_official',
                                                   ),
                                                   mode: LaunchMode
                                                       .externalApplication,
