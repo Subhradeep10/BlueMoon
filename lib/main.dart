@@ -149,25 +149,7 @@ class _MyAppState extends State<MyApp> {
     final String lang =
         Hive.box('settings').get('lang', defaultValue: 'English') as String;
     final Map<String, String> codes = {
-      'Chinese': 'zh',
-      'Czech': 'cs',
-      'Dutch': 'nl',
       'English': 'en',
-      'French': 'fr',
-      'German': 'de',
-      'Hebrew': 'he',
-      'Hindi': 'hi',
-      'Hungarian': 'hu',
-      'Indonesian': 'id',
-      'Italian': 'it',
-      'Polish': 'pl',
-      'Portuguese': 'pt',
-      'Russian': 'ru',
-      'Spanish': 'es',
-      'Tamil': 'ta',
-      'Turkish': 'tr',
-      'Ukrainian': 'uk',
-      'Urdu': 'ur',
     };
     _locale = Locale(codes[lang]!);
 

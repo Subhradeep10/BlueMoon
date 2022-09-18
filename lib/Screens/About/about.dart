@@ -185,11 +185,13 @@ class _AboutScreenState extends State<AboutScreen> {
                         foregroundColor: Colors.transparent,
                       ),
                       onPressed: () {
-                        const String upiUrl =
-                            'upi://pay?pa=ankit.sangwan.5688@oksbi&pn=BlackHole&mc=5732&aid=uGICAgIDn98OpSw&tr=BCR2DN6T37O6DB3Q';
-                        launchUrl(
-                          Uri.parse(upiUrl),
-                          mode: LaunchMode.externalApplication,
+                        copyToClipboard(
+                          context: context,
+                          text: 'subhradeepsamanta2002@oksbi',
+                          displayText: AppLocalizations.of(
+                            context,
+                          )!
+                              .upiCopied,
                         );
                       },
                       onLongPress: () {
